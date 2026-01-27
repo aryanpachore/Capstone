@@ -1,12 +1,9 @@
 import { BrowserRouter } from 'react-router-dom';
-import Navbar from './components/layout/Navbar';
-import AppRoutes from './routes/AppRoutes';
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Navbar />
-      <AppRoutes />
-    </BrowserRouter>
+    <>
+      <h1>Hello, World!</h1>
+    </>
   );
 }

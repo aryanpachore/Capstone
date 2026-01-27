@@ -81,6 +81,9 @@ PORT=<Your_Port_number> Eg: 3000 , 4000 etc.
 
 ### Run database migrations & seeders:
 ```
+npm install sequelize
+npm install mysql2
+npm install --save-dev sequelize-cli
 npx sequelize db:migrate
 npx sequelize db:seed:all
 ```
