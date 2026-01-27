@@ -1,0 +1,4 @@
+node_module/
+.env
+combined.log
+src/config/config.json
