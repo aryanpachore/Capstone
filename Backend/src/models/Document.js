@@ -28,6 +28,14 @@ const Document = sequelize.define('Document', {
     type: DataTypes.STRING,
     allowNull: false,
   },
+  mimeType: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  extractedText: {
+    type: DataTypes.TEXT('long'), // Use LONGTEXT for large documents
+    allowNull: true,
+  },
   status: {
     type: DataTypes.ENUM('PENDING', 'PROCESSED', 'ERROR'),
     defaultValue: 'PENDING',
