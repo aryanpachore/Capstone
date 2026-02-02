@@ -5,6 +5,7 @@ import dotenv from 'dotenv';
 import { connectDB, sequelize } from './config/database.js';
 import authRoutes from './routes/auth.routes.js';
 import documentRoutes from './routes/document.routes.js';
+import chatRoutes from './routes/chat.routes.js';
 
 dotenv.config();
 
@@ -17,6 +18,7 @@ app.use(express.json());
 
 app.use('/api/auth', authRoutes);
 app.use('/api/documents', documentRoutes);
+app.use('/api/chat', chatRoutes);
 
 app.get('/api/health', (req, res) => {
   res.status(200).json({ status: 'ok', message: 'BuddyLawyer API is running' });
